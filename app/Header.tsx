@@ -1,10 +1,11 @@
-import React from 'react'
+import Nav from './Nav';
 
 function Header() {
   return (
-    <div className="flex items-center justify-center">
-      <h1>Header</h1>
-    </div>
+    <header className="flex items-center justify-center my-4 mx-4">
+      <Nav />
+      {/* <h1 className="text-4xl">Lilu&apos;s App</h1> */}
+    </header>
   )
 }
 
