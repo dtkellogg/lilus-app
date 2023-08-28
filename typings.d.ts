@@ -1,4 +1,4 @@
 type NavLink = 
-  | 'blog'
-  | 'about'
-  | 'contact'
+  | 'Blog'
+  | 'About'
+  | 'Contact'

@@ -20,10 +20,9 @@ function Nav() {
   console.log(navLinks)
 
   return (
-    <div>
-      <h1>NAV</h1>
+    <div className="w-full flex justify-around">
       {navLinks.map((navLink) => (
-        <div key={navLink}>{navLink}</div>
+        <a key={navLink} href={`/${navLink.toLowerCase()}`}>{navLink}</a>
         // <Link key={navLink} href={`/${navLink}`} 
         //   className={`navLink `}
         // />
