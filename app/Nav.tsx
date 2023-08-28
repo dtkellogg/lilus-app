@@ -4,28 +4,24 @@ import { navLinks } from "../constants"
 import React from 'react'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
-// const navLinks = [
-// 'blog',
-// 'about',
-// 'contact',
-// ]
 
 function Nav() {
-  // const pathname = usePathname()
-  // const isActive = (path: string) => {
-  //   return pathname?.split('/').pop() === path
-  // }
+  const pathname = usePathname()
 
   console.log('navLinks')
   console.log(navLinks)
+  console.log(`pathname: ${pathname}`)
 
   return (
-    <div className="w-full flex justify-evenly">
+    <div className="w-full grid grid-cols-3">
       {navLinks.map((navLink) => (
-        <a key={navLink} href={`/${navLink.toLowerCase()}`}>{navLink}</a>
-        // <Link key={navLink} href={`/${navLink}`} 
-        //   className={`navLink `}
-        // />
+        <Link key={navLink} href={`/${navLink.toLowerCase()}`} 
+          className={`navLink 
+            ${pathname?.split('/').pop() === navLink.toLowerCase() && 'underline decoration-red-800 underline-offset-4 font-bold text-lg'}
+          `}
+        >
+          {navLink}
+        </Link>
       ))}
     </div>
   )
