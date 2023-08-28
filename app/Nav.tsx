@@ -20,7 +20,7 @@ function Nav() {
   console.log(navLinks)
 
   return (
-    <div className="w-full flex justify-around">
+    <div className="w-full flex justify-evenly">
       {navLinks.map((navLink) => (
         <a key={navLink} href={`/${navLink.toLowerCase()}`}>{navLink}</a>
         // <Link key={navLink} href={`/${navLink}`} 
