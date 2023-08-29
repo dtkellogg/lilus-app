@@ -9,7 +9,6 @@ function Header() {
         <HomeIcon className="w-8 h-8 cursor-pointer" />
       </Link>
       <Nav />
-      {/* <h1 className="text-4xl">Lilu&apos;s App</h1> */}
       <MagnifyingGlassIcon className="w-8 h-8 cursor-pointer" />
     </header>
   )
