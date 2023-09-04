@@ -1,6 +1,6 @@
 'use client'
 
-import { navLinks } from "../constants"
+import { navLinks } from "../../constants"
 import React from 'react'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
